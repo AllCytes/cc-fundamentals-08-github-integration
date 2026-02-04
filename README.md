@@ -2,6 +2,26 @@
 
 > Work from anywhere. Let Claude handle tasks while you're away from your computer.
 
+## Make It Your Own
+
+After cloning, remove the original remote and create your own GitHub repository:
+
+**Windows (PowerShell)**
+```powershell
+git remote remove origin
+gh repo create cc-fundamentals-08-github-integration --public --source=. --remote=origin --push
+```
+
+**Mac / Linux**
+```bash
+git remote remove origin
+gh repo create cc-fundamentals-08-github-integration --public --source=. --remote=origin --push
+```
+
+> **Prerequisite:** Install the [GitHub CLI](https://cli.github.com/) — `winget install GitHub.cli` (Windows) or `brew install gh` (Mac), then run `gh auth login` once.
+
+---
+
 ## Before the Purpose
 
 You don't always have access to your development machine. Maybe you're on your phone, commuting, or just away from the keyboard. GitHub Integration solves this.
